@@ -28,6 +28,6 @@ app.use('/api/events', require('./routes/events'));
 
 
 
-app.listen(4000, () => {
-    console.log(`Server run in ${process.env.PORT}`)
+app.listen(process.env.PORT, () => {
+    console.log(`Server run in ${process.env.PORT}`);
 });
